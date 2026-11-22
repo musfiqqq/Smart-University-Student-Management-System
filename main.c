@@ -1,5 +1,3 @@
-// PROG 102 Project - Smart University Student Management and Result System
-
 #include <stdio.h>
 #include <string.h>
 
@@ -48,7 +46,6 @@ void getInput(char message[], char text[], int size)
 }
 
 
-// takes only number input, if user type letter it will ask again
 int readInt()
 {
     int n, r;
@@ -67,7 +64,6 @@ int readInt()
 }
 
 
-// search student by id
 int searchID(int num)
 {
     int i;
@@ -148,7 +144,6 @@ int checkResult(int index)
 }
 
 
-// sgpa of one semester
 float getSGPA(int index, int sem)
 {
     float totalPoints = 0;
@@ -167,7 +162,6 @@ float getSGPA(int index, int sem)
 }
 
 
-// cgpa of all semesters which have result
 float getCGPA(int index)
 {
     float totalPoints = 0;
@@ -479,7 +473,6 @@ void deleteStudent()
         return;
     }
 
-    // shifting all next students one step left
     for (i = index; i < count - 1; i++)
     {
         id[i] = id[i + 1];
